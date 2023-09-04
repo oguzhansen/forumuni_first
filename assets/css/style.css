@@ -1,0 +1,323 @@
+
+
+body{
+   margin: 0;
+   background-color: #fff;
+   font-family: "Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+   transition: 0.3s;
+   opacity: 0;
+}
+
+.loading
+{
+   opacity: 0;
+   pointer-events: auto;
+   transition: 0.1s;
+}
+
+.darkth
+{
+   color: #ddd;
+   background-color: #111;
+}
+
+.darkth .sidebarmenu
+{
+   border-right: 1px solid #333;
+}
+
+.darkth a
+{
+   color: #ddd;
+}
+
+.lightth
+{
+   color: #111;
+   background-color: #fff;
+}
+
+.lightth a
+{
+   color: #111;
+   text-decoration: none;
+}
+
+.yonpost
+{
+   border-radius: 15px;
+   border: 1px solid #242424;
+   padding: 20px;
+}
+
+.mobmenu
+{
+   display: none;
+}
+
+.sidebarmenu .logo
+{
+   padding: 0 15px 15px 15px;
+}
+
+.sidebarmenu{
+   padding-left: 10px;
+   font-size: 19px;
+   width: 320px;
+   top:0;
+   left: 0;
+   bottom: 0;
+   border-right: 1px solid #dedcdc;
+   padding-top: 50px;
+}
+
+.sidebarmenu h1{
+   display: block;
+   padding: 10px 20px;
+   text-decoration: none;
+   letter-spacing: 2px;
+   font-weight: 400;
+   margin: 0;
+   font-size: 25px;
+   text-transform: uppercase;
+}
+
+.sidebarmenu a{
+   display: block;
+   padding: 10px 20px;
+   text-decoration: none;
+}
+
+.darkth .ustmenu
+{
+   box-shadow: 0 -20px 12px 0 #111;
+}
+
+.lightth .ustmenu
+{
+   box-shadow: 0 -20px 12px 0 #ddd;
+}
+
+.darkth .altmenu
+{
+   box-shadow: 0 20px 12px 0 #111;
+}
+
+.lightth .altmenu
+{
+   box-shadow: 0 20px 12px 0 #ddd;
+}
+
+.darkth .sidebarmenu a:hover
+{
+   color: white;
+   background-color: #222;
+   margin-right: 10px;
+   cursor: pointer;
+   border-radius: 10px;
+   text-decoration: none;
+}
+
+.lightth .sidebarmenu a:hover
+{
+   color: #111;
+   background-color: #dbdada;
+   margin-right: 10px;
+   cursor: pointer;
+   border-radius: 10px;
+   text-decoration: none;
+}
+
+.sidebarmenu i, .sidebarmenu .i
+{
+   font-size: 19px;
+   width: 25px;
+}
+
+.sidtxt
+{
+   padding-left: 12px;
+}
+
+@media only screen and (max-width: 1800px) {
+   .sidtxt
+   {
+      display: none;
+   }
+
+   .sidebarmenu
+   {
+      width: 75px;
+   }
+
+   .sidebarmenu .logo
+   {
+      padding: 3px;
+   }
+
+   .sidebarmenu h1
+   {
+      display: none;
+   }
+}
+
+@media only screen and (max-width: 1322px) {
+   .sidebarmenu
+   {
+      display: none;
+   }
+
+   .mobmenu
+   {
+      display: block;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .altmenu
+   {
+      position: fixed;
+      height: 60px;
+      font-size: 19px;
+      bottom: 20px;
+      padding: 25px;
+      display: flex;
+      justify-content: space-between;
+      width: 95%;
+      border-radius: 15px;
+      align-items: center;
+   }
+
+   .altmenu .activemob a
+   {
+      color: white;
+   }
+
+   .altmenu, .ustmenu
+   {
+      z-index: 999;
+   }
+
+   .darkth .altmenu, .darkth .ustmenu
+   {
+      border: 1px solid #222;
+      background-color: #111;
+   }
+
+   .lightth .altmenu, .lightth .ustmenu
+   {
+      border: 1px solid rgb(205, 204, 204);
+      background-color: #fff;
+   }
+
+   .activemob
+   {
+      background-color: purple;
+   }
+   
+   .activemob a:hover
+   {
+      color: white; 
+   }
+
+   .lightth .altmenu a:hover
+   {
+      color: black;
+   }
+
+   .darkth .altmenu a:hover
+   {
+      color: white;
+   }
+
+   .altmenu li
+   {
+      padding: 7px;
+      list-style: none;
+      transition: 0.4s;
+      border-radius: 15px;
+   }
+
+   .darkth .altmenu li:hover
+   {
+      background-color: #333;
+   }
+
+   .lightth .altmenu li:hover
+   {
+      background-color: #ddd;
+   }
+
+   .altmenu a
+   {
+      padding: 15px;
+   }
+
+   .container
+   {
+      margin-bottom: 90px;
+      margin-top: 50px;
+   }
+
+   .ustmenu
+   {
+      position: fixed;
+      height: 60px;
+      font-size: 19px;
+      top: 20px;
+      display: flex;
+      padding-left: 15px;
+      padding-top: 8px;
+      justify-content: space-between;
+      width: 95%;
+      border-radius: 15px;
+      align-items: center;
+   }
+   
+   .frmsearch
+   {
+      width: 100%;
+      margin-top: -10px;
+   }
+
+   .frmsearch input
+   {
+      width: 100%;
+      background-color: transparent;
+      border: none;
+   }
+
+   .frmsearch input:focus
+   {
+      outline: none;
+   }
+
+   .darkth .frmsearch input
+   {
+      color: white;
+   }
+
+   .sonuclar
+   {
+      display: none;
+      width: 95%;
+      padding: 10px;
+   }
+
+   .lightth .frmsearch input
+   {
+      color: #111;
+   }
+
+   .darkth .sonuclar 
+   {
+      background-color: #111;
+   }
+
+   .lightth .sonuclar
+   {
+      background-color: #fff;
+   }
+}
